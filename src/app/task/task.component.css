@@ -1,0 +1,29 @@
+.btn {
+    text-align:right;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.box {
+    border-bottom: 30px;
+    padding: 10px;
+    margin-bottom: 30px;
+    height: max-content;
+    background-color: lightblue;
+    width: 50%;
+    transition: 0.3ms;
+}
+.selected {
+    background-color: rgb(16, 125, 165);
+    color: whitesmoke;
+}
+.id {
+    font-size: 20px;
+    float: left;
+}
+.spName {
+    float: left;
+    padding-top: 4px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+ 

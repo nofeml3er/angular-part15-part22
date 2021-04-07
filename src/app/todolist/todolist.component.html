@@ -1,0 +1,31 @@
+<div class = "b">
+    <app-task
+    *ngFor = "let t of tasks; let i = index"
+    [task] = "t"
+    (OnSelected) = "removeThisTask($event)"
+    (click) = "selected(i)"
+    ></app-task>
+    
+</div>
+<div class = "show" *ngIf = "isShow" id="descript">
+    <div class = "showIn">
+        <p><b>Description : </b>{{ tasks[i].description }}</p>
+        <button (click) = "close()" >ปิด</button>
+    </div>
+</div>
+<div class = "inputPart">
+    <h3>Add Task</h3>
+    <p class = "p">ID : </p>
+    <div class = "input">
+        <input [(ngModel)] = "id">
+    </div>
+    <p class = "p">Name : </p>
+    <div class = "input">
+        <input [(ngModel)] = "name">
+    </div>
+    <p class = "p">Description : </p>
+    <div class = "input">
+        <input [(ngModel)] = "des">
+    </div>
+    <button (click) = "add()">Add</button>
+</div>

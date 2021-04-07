@@ -1,0 +1,51 @@
+.show {
+    box-sizing: border-box;
+    width: 80%;
+    height: auto;
+    text-align: left;
+    color: wheat;
+    clear: both;
+    background-color: lightseagreen;
+    
+}
+.b {
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin:auto;
+
+}
+
+.box {
+    box-sizing: border-box;
+    background-color: cadetblue;
+}
+.showIn {
+    margin-bottom: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 80%;
+    text-align: left;
+}
+
+.inputPart {
+    clear: both;
+    box-sizing: border-box;
+    margin-left: 10px;
+    padding: 10px;
+    width: 80%;
+    background-color: lightgrey;
+}
+.p {
+    margin: auto;
+    float: left;
+    width: 15%;
+}
+input{
+    margin-bottom: 10px;
+    width: 75%;
+    height: 20px;
+}
+b {
+    color: white;
+}

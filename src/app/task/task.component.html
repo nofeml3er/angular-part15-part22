@@ -1,0 +1,10 @@
+<div class = "box" [class.selected] = "isSelected" (click) = "hilight()">
+       <h3 class = "id">ID : {{ task.id }}</h3>
+        <p class = "name">
+            <span class = "spName">| Name : {{ task.name }}</span>
+        </p>
+    <p class = "btn">
+        
+        <button (click) = "removeTask()">Delete</button>
+    </p>
+</div>
