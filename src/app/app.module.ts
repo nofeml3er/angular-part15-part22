@@ -8,6 +8,10 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import { TaskComponent } from './task/task.component';
 import { FormsModule } from '@angular/forms';
+import { UsersettingsComponent } from './usersettings/usersettings.component';
+import { PreferenceComponent } from './preference/preference.component';
+import { WorkspacesettingsComponent } from './workspacesettings/workspacesettings.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { FormsModule } from '@angular/forms';
     ProductItemComponent,
     ProductListComponent,
     TodolistComponent,
-    TaskComponent
+    TaskComponent,
+    UsersettingsComponent,
+    PreferenceComponent,
+    WorkspacesettingsComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
