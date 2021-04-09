@@ -9,9 +9,10 @@ import { TodolistComponent } from './todolist/todolist.component';
 import { TaskComponent } from './task/task.component';
 import { FormsModule } from '@angular/forms';
 import { UsersettingsComponent } from './usersettings/usersettings.component';
-import { PreferenceComponent } from './preference/preference.component';
 import { WorkspacesettingsComponent } from './workspacesettings/workspacesettings.component';
 import { DetailsComponent } from './details/details.component';
+import { TopbarPreferenceComponent } from './topbar-preference/topbar-preference.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,17 @@ import { DetailsComponent } from './details/details.component';
     TodolistComponent,
     TaskComponent,
     UsersettingsComponent,
-    PreferenceComponent,
     WorkspacesettingsComponent,
-    DetailsComponent
+    DetailsComponent,
+    TopbarPreferenceComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([
+      { path: '', component: UsersettingsComponent},
+      { path: 'workspacesettings', component: WorkspacesettingsComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

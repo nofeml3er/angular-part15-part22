@@ -1,1 +1,5 @@
-<p>workspacesettings works!</p>
+<div *ngFor = "let workspacesetting of workspacesetting">
+    <h4>{{ workspacesetting.title }}</h4>
+    <p>{{ workspacesetting.detail }}</p>
+    <p>{{ workspacesetting.value }}</p>
+</div>
