@@ -1,0 +1,23 @@
+<div class = "sideBar">
+    <div class= "listMenu" *ngFor = "let listMenu of listMenu">
+        <!-- <ul> -->
+            <details>
+                
+                    <summary class = "submenu" [class.none] = "listMenu.sub1 == string">
+                        <a href = "#{{ listMenu.main }}" [class.link] = "listMenu.sub1 == string">{{ listMenu.main }}</a>
+                        <!-- <li class = "main">{{ listMenu.main }}</li> -->
+                    </summary>
+                
+                <div>
+                    <a href = "#{{ listMenu.sub1 }}" class = "sub" *ngIf = "listMenu.sub1">
+                    {{ listMenu.sub1 }}</a>
+                </div>
+                <div>
+                    <a href = "#{{ listMenu.sub2 }}" class = "sub" *ngIf = "listMenu.sub2">
+                        {{ listMenu.sub2 }}</a>
+                    </div>
+            </details>
+        <!-- </ul> -->
+    </div>
+</div>
+

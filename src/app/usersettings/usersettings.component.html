@@ -1,18 +1,49 @@
-<h3>Commonly Used</h3>
-<div *ngFor = "let usersetting of usersetting">
-    <h4>{{ usersetting.title }}</h4>
-    <p>{{ usersetting.detail }}</p>
-    <p>{{ usersetting.value }}</p>
+
+<div class = "main">
+    <div class = "side">
+        <div class= "menu">
+            <app-sideusersettings></app-sideusersettings>
+        </div> 
+    </div>
+    <div class = "container">
+        <h3 id = "Commonly Used">Commonly Used</h3>
+        <div *ngFor = "let usersetting of usersetting" class = "detail">
+            <h4>{{ usersetting.title }}</h4>
+            <p>{{ usersetting.detail }}</p>
+            <p class = "value">{{ usersetting.value }}</p>
+        </div>
+        <h3 id = "Text Editor">Text Editor</h3>
+        <div *ngFor = "let textEditor of textEditor" class = "detail">
+            <h4>{{ textEditor.title }}</h4>
+            <p>{{ textEditor.detail }}</p>
+            <p class="value">{{ textEditor.value }}</p>
+        </div>
+        <h3 id = "Cursor">Cursor</h3>
+        <div *ngFor = "let cursor of cursor" class = "detail">
+            <h4>{{ cursor.title }}</h4>
+            <p>{{ cursor.detail }}</p>
+            <p class="value">{{ cursor.value }}</p>
+        </div>
+        <h3 id = "Find">Find</h3>
+        <div *ngFor = "let find of find" class = "detail">
+            <h4>{{ find.title }}</h4>
+            <p>{{ find.detail }}</p>
+            <p class="value">{{ find.value }}</p>
+        </div>
+        <h3 id = "Workbench">Workbench</h3>
+        <div *ngFor = "let workBench of workBench" class = "detail">
+            <h4>{{ workBench.title }}</h4>
+            <p>{{ workBench.detail }}</p>
+            <p class="value">{{ workBench.value }}</p>
+        </div>
+        <h3 id = "Appearance">Appearance</h3>
+        <div *ngFor = "let appearance of appearance" class = "detail">
+            <h4>{{ appearance.title }}</h4>
+            <p>{{ appearance.detail }}</p>
+            <p class="value">{{ appearance.value }}</p>
+        </div>
+    </div>
 </div>
-<h3>Text Editor</h3>
-<div *ngFor = "let textEditor of textEditor">
-    <h4>{{ textEditor.title }}</h4>
-    <p>{{ textEditor.detail }}</p>
-    <p>{{ textEditor.value }}</p>
-</div>
-<h3>Cursor</h3>
-<div *ngFor = "let cursor of cursor">
-    <h4>{{ cursor.title }}</h4>
-    <p>{{ cursor.detail }}</p>
-    <p>{{ cursor.value }}</p>
-</div>
+
+
+

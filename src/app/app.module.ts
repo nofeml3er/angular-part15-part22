@@ -13,6 +13,7 @@ import { WorkspacesettingsComponent } from './workspacesettings/workspacesetting
 import { DetailsComponent } from './details/details.component';
 import { TopbarPreferenceComponent } from './topbar-preference/topbar-preference.component';
 import { RouterModule } from '@angular/router';
+import { SideusersettingsComponent } from './sideusersettings/sideusersettings.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RouterModule } from '@angular/router';
     UsersettingsComponent,
     WorkspacesettingsComponent,
     DetailsComponent,
-    TopbarPreferenceComponent
+    TopbarPreferenceComponent,
+    SideusersettingsComponent
   ],
   imports: [
     BrowserModule,
