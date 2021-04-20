@@ -3,7 +3,6 @@ import { Appearance } from './appearance';
 import { CommonlyUsed } from './commonlyused'
 import { Cursor } from './cursor';
 import { Find } from './find';
-import { Menuusersettings } from './menuusersettings';
 import { Texteditor } from './texteditor'
 import { Workbench } from './workbench';
 

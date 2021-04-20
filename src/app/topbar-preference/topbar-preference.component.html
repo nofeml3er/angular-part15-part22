@@ -2,10 +2,10 @@
     <div class="card-header">
       <ul class="nav nav-tabs card-header-tabs">
         <li class="nav-item">
-          <a class="nav-link" [class.active] = "" [routerLink]="['/']">User Settings</a>
+          <a class="nav-link" [class.active] = "isSelectedUser" (click) = "selectUser()" [routerLink]="['/']">User Settings</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [class.active] = false [routerLink]="['/workspacesettings']">Workspace Settings</a>
+          <a class="nav-link" [class.active] = "isSelectedWork" (click) = "selectWork()" [routerLink]="['/workspacesettings']">Workspace Settings</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>

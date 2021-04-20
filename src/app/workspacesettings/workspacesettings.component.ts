@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Workspacesettings } from './workspacesettings';
+import { Appearance } from './appearance';
+import { Commonlyused } from './commonlyused';
+import { Cursor } from './cursor';
+import { Find } from './find';
+import { Texteditor } from './texteditor';
+import { Workbench } from './workbench';
 
 @Component({
   selector: 'app-workspacesettings',
@@ -8,25 +13,14 @@ import { Workspacesettings } from './workspacesettings';
 })
 export class WorkspacesettingsComponent implements OnInit {
 
-  workspacesetting : Workspacesettings[];
+  usersetting = Commonlyused;
+  textEditor = Texteditor;
+  cursor = Cursor;
+  find = Find;
+  workBench = Workbench;
+  appearance = Appearance;
 
   constructor() { 
-    this.workspacesetting = [];
-    this.workspacesetting.push({
-      title: "Files: Auto Save (Modified in: User)",
-      detail: "Controls auto save of dirty editors. Read more about autosave here.",
-      value: "off"
-    });
-  this.workspacesetting.push({
-      title: "Editor: Font Size (Modified in: User)",
-      detail: "Controls the font size in pixels.",
-      value: 13
-    });
-  this.workspacesetting.push({
-      title: "Editor: Font Family (Modified in: User)",
-      detail: "Controls the font family.",
-      value: "MeMenlo, Monaco, 'Courier New', monospace"
-    })
   }
 
   ngOnInit(): void {
